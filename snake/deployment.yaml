@@ -16,13 +16,13 @@ spec:
     spec:
       containers:
         - name: snake
-          image: spkane/wordchain
+          image: cmilanf/docker-snake
           ports:
             - name: http
-              containerPort: 8080
+              containerPort: 3000
           resources:
             requests:
               cpu: 10m
-              memory: 256Mi
+              memory: 512Mi
             limits:
-              memory: 256Mi
+              memory: 512Mi
