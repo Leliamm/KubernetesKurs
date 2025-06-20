@@ -2,13 +2,13 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: whoami
+  name: snake
   namespace: leliamm
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: whoami
+      app: snake
   template:
     metadata:
       labels:
@@ -20,9 +20,6 @@ spec:
           ports:
             - name: http
               containerPort: 8080
-          envFrom:
-            - configMapRef:
-                name: whoami-config
           resources:
             requests:
               cpu: 10m
