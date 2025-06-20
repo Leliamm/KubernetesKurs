@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: whoami
-  namespace: 'leliamm'
+  namespace: leliamm
 spec:
   replicas: 3
   selector:
