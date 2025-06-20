@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: snake
-          image: spkane/snake-game
+          image: spkane/wordchain
           ports:
             - name: http
               containerPort: 8080
