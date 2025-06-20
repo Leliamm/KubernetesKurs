@@ -9,7 +9,7 @@ resources:
   - http-route.yaml
 
 configMapGenerator:
-  - name: whoami-config
+  - name: snake-config
     namespace: leliamm
     literals:
-      - WHOAMI_PORT_NUMBER=8080
+      - SNAKE_PORT_NUMBER=8080
