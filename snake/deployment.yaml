@@ -12,10 +12,10 @@ spec:
   template:
     metadata:
       labels:
-        app: whoami
+        app: snake
     spec:
       containers:
-        - name: whoami
+        - name: snake
           image: spkane/snake-game
           ports:
             - name: http
